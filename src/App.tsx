@@ -2,45 +2,49 @@ import { useEffect, useMemo, useState } from "react";
 import "./App.css";
 import { communes } from "./data/communes";
 import { subscribeToPush } from "./lib/push";
+import {
+  formatDateFr,
+  getProchaineDateCollecte,
+} from "./lib/collecte";
 
 //const DEFAULT_COMMUNE = "PREVERANGES";
 
 console.log(import.meta.env.VITE_VAPID_PUBLIC_KEY);
 
 
-function formatDateFr(date: Date): string {
-  const dateFormatee = date.toLocaleDateString("fr-FR", {
-    weekday: "long",
-    day: "numeric",
-    month: "long",
-  });
+// function formatDateFr(date: Date): string {
+//   const dateFormatee = date.toLocaleDateString("fr-FR", {
+//     weekday: "long",
+//     day: "numeric",
+//     month: "long",
+//   });
 
-  return dateFormatee.charAt(0).toUpperCase() + dateFormatee.slice(1);
-}
+//   return dateFormatee.charAt(0).toUpperCase() + dateFormatee.slice(1);
+// }
 
-function ajouterJours(date: Date, jours: number): Date {
-  const nouvelleDate = new Date(date);
-  nouvelleDate.setDate(nouvelleDate.getDate() + jours);
-  return nouvelleDate;
-}
+// function ajouterJours(date: Date, jours: number): Date {
+//   const nouvelleDate = new Date(date);
+//   nouvelleDate.setDate(nouvelleDate.getDate() + jours);
+//   return nouvelleDate;
+// }
 
-function getProchaineDateCollecte(premierJourCollecte: string): Date | null {
-  const aujourdHui = new Date();
-  aujourdHui.setHours(0, 0, 0, 0);
+// function getProchaineDateCollecte(premierJourCollecte: string): Date | null {
+//   const aujourdHui = new Date();
+//   aujourdHui.setHours(0, 0, 0, 0);
 
-  let dateCollecte = new Date(premierJourCollecte);
-  dateCollecte.setHours(0, 0, 0, 0);
+//   let dateCollecte = new Date(premierJourCollecte);
+//   dateCollecte.setHours(0, 0, 0, 0);
 
-  if (Number.isNaN(dateCollecte.getTime())) {
-    return null;
-  }
+//   if (Number.isNaN(dateCollecte.getTime())) {
+//     return null;
+//   }
 
-  while (dateCollecte < aujourdHui) {
-    dateCollecte = ajouterJours(dateCollecte, 14);
-  }
+//   while (dateCollecte < aujourdHui) {
+//     dateCollecte = ajouterJours(dateCollecte, 14);
+//   }
 
-  return dateCollecte;
-}
+//   return dateCollecte;
+// }
 
 function getCommuneFromPath(): string | null {
   const pathname = window.location.pathname;
@@ -95,33 +99,6 @@ function App() {
 
     window.location.href = `/${encodeURIComponent(commune.nom)}`;
   }
-
-  // async function testerNotification() {
-  //   if (!("serviceWorker" in navigator)) {
-  //     alert("Service worker non supporté.");
-  //     return;
-  //   }
-
-  //   if (!("Notification" in window)) {
-  //     alert("Notifications non supportées.");
-  //     return;
-  //   }
-
-  //   const permission = await Notification.requestPermission();
-
-  //   if (permission !== "granted") {
-  //     alert("Permission refusée.");
-  //     return;
-  //   }
-
-  //   const registration = await navigator.serviceWorker.register("/sw.js");
-
-  //   await registration.showNotification("Prochain passage", {
-  //     body: `Collecte prévue : ${prochaineDate}. Pensez à sortir votre bac.`,
-  //     icon: "/vite.svg",
-  //     badge: "/vite.svg",
-  //   });
-  // }
 
   if (communeDepuisUrl) {
     return (
