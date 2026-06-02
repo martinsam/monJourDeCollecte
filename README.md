@@ -9,6 +9,10 @@ PWA - Display and notifications for waste collection days - SMIRTOM Saint-Amando
 - npm run test:run
 - npx vercel --prod
 
+# DEMO
+
+ - [Collecte Info](https://collecteinfo.vercel.app/)
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
