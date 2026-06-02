@@ -1,14 +1,11 @@
 # monJourDeCollecte
 
 <p align="center">
-  <img src="public/logo.png" alt="Mon Jour de Collecte" width="150">
+  <img src="public/orduress.png" alt="Mon Jour de Collecte" width="150">
 </p>
 
-# Mon Jour de Collecte
 
 PWA permettant de consulter les prochains passages des poubelles du SMIRTOM Saint-Amandois.
-
-
 PWA - Display and notifications for waste collection days - SMIRTOM Saint-Amandois
 
 ![Écran d'accueil](screenshots/city_selection.png)
