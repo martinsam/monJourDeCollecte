@@ -1,3 +1,8 @@
+# monJourDeCollecte
+PWA - affichage et notification des jours de passages des poubelles - SMIRTOM Saint Amandois
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
