@@ -2,7 +2,7 @@
 
 PWA - Display and notifications for waste collection days - SMIRTOM Saint-Amandois
 
-![Écran d'accueil](screenshots/accueil.png)
+![Écran d'accueil](screenshots/city_selection.png)
 
 # Installation 
 
