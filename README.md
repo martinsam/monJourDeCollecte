@@ -1,6 +1,6 @@
 # monJourDeCollecte
-PWA - affichage et notification des jours de passages des poubelles - SMIRTOM Saint Amandois
 
+PWA - Display and notifications for waste collection days - SMIRTOM Saint-Amandois
 
 
 # React + TypeScript + Vite
