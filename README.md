@@ -1,7 +1,7 @@
 # monJourDeCollecte
 
 <p align="center">
-  <img src="public/orduress.png" alt="Mon Jour de Collecte" width="150">
+  <img src="public/ordures.png" alt="Mon Jour de Collecte" width="150">
 </p>
 
 
