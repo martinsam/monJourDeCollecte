@@ -1,0 +1,133 @@
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f4f6f8;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 100%;
+  max-width: 380px;
+
+  background: white;
+  border-radius: 24px;
+
+  padding: 32px;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+
+  text-align: center;
+}
+
+.label {
+  margin: 0;
+  color: #667085;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+h1 {
+  margin: 16px 0;
+  font-size: 40px;
+  line-height: 1.1;
+  color: #111827;
+}
+
+.description {
+  margin: 0;
+  color: #475467;
+  font-size: 16px;
+}
+
+.commune-form {
+  width: 100%;
+  margin-top: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.commune-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #475467;
+  text-align: left;
+}
+
+.commune-input {
+  width: 100%;
+
+  padding: 16px 18px;
+
+  border-radius: 16px;
+  border: 1px solid #d0d5dd;
+
+  background: white;
+
+  font-size: 16px;
+
+  box-sizing: border-box;
+
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.commune-input:focus {
+  outline: none;
+
+  border-color: #7a0f32;
+
+  box-shadow:
+    0 0 0 4px rgba(122, 15, 50, 0.12);
+}
+
+.commune-button {
+  width: 100%;
+
+  padding: 16px;
+
+  border: 0;
+  border-radius: 16px;
+
+  background: #7a0f32;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.15s,
+    opacity 0.2s;
+}
+
+.commune-button:hover {
+  opacity: 0.95;
+}
+
+.commune-button:active {
+  transform: scale(0.98);
+}
