@@ -2,6 +2,12 @@
 
 PWA - Display and notifications for waste collection days - SMIRTOM Saint-Amandois
 
+# Installation 
+
+- npm install
+- npm run build
+- npm run test:run
+- npx vercel --prod
 
 # React + TypeScript + Vite
 
