@@ -1,5 +1,5 @@
 import { describe, expect, it, beforeEach } from "vitest";
-import {getCommuneFromPath, goToCommune, goToHome} from "./navigation";
+import {getCommuneFromPath} from "./navigation";
 
 describe("getCommuneFromPath", () => {
   it("retourne null pour la racine", () => {
