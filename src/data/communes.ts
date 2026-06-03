@@ -11,7 +11,7 @@ export const communes: Commune[] = [
   },
   {
     nom: "ARCOMPS",
-    premierJourCollecte: null,
+    premierJourCollecte: "2026-01-06",
   },
   {
     nom: "ARDENAIS",
@@ -19,23 +19,23 @@ export const communes: Commune[] = [
   },
   {
     nom: "ARPHEUILLES",
-    premierJourCollecte: null,
+    premierJourCollecte: "2026-01-15",
   },
   {
     nom: "AUGY-SUR-AUBOIS",
-    premierJourCollecte: null,
+    premierJourCollecte: "2026-01-13",
   },
   {
     nom: "BEDDES",
-    premierJourCollecte: null,
+    premierJourCollecte: "2026-01-12",
   },
   {
     nom: "BESSAIS-LE-FROMENTAL",
-    premierJourCollecte: null,
+    premierJourCollecte: "2026-01-13",
   },
   {
     nom: "BLET",
-    premierJourCollecte: null,
+    premierJourCollecte: "2026-01-14",
   },
   {
     nom: "BOUZAIS",
